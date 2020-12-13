@@ -28,9 +28,12 @@ new TypeIt('#type1', {
   speed: 160,
   loop: false,
   waitUntilVisible: true,
-}).type('Software Developer', { delay: 400})
+}).type('Software Engineer', { delay: 400})
 .pause(1300)
-.delete(9)
-.type('Engineer', {delay: 400})
+.delete(18)
+.type('Full-Stack Developer', {delay: 400})
 .pause(1300)
+.delete(28)
+.type('UCSB Graduate')
+
 .go()
