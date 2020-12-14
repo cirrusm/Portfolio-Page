@@ -102,7 +102,6 @@ li {
   background-color: rgb(132, 205, 250);
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
   z-index: 999;
-  color: black;
 }
 
 .top-nav {
@@ -366,9 +365,10 @@ a:visited{
 
 .projectcontainer {
     padding: 20px;
-  margin-left: 15%;
-  margin-right: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
   margin-top: 5%;
+  width: 100vw;
   background-color: rgb(132, 205, 250);
   color: black;
 }
@@ -386,16 +386,21 @@ a:visited{
 }
 
 @media only screen and (max-width: 567px) {
+.projectcontainer{
+
+    width: 100vw;
+    margin: 0;
+    margin-top: 5vh;
+}
   .project-pic-container {
     flex-direction: column;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
+   
   }
   .project-pic {
     flex-direction: column;
     width: 70vw;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 
