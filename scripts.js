@@ -4,24 +4,36 @@ const navClose = document. querySelector(".close");
 const navBar = document.querySelector(".nav")
 
 const navLeft = menu.getBoundingClientRect().left;
+const navLink = document.querySelector(".nav-link")
 
 
 navOpen.addEventListener("click", () => {
-  if (navLeft < 0) {
+  
     menu.classList.add("show");
 document.body.classList.add("show");
 navBar.classList.add("show")
-  }
+  
 });
 
 navClose.addEventListener("click", () => {
-  if (navLeft < 0) {
+  
     menu.classList.remove("show");
 document.body.classList.remove("show");
 navBar.classList.remove("show")
-  }
+  
 });
 
+//Fix Nav
+
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener('scroll', () => {
+  const scrollHeight = window.pageYOffset;
+  if(scrollHeight > navHeight){
+    navBar.classList.add('fix-nav')
+  }else{
+    navBar.classList.remove("fix-nav")
+  }
+})
 
 
 new TypeIt('#type1', {
@@ -29,14 +41,14 @@ new TypeIt('#type1', {
   loop: true,
   waitUntilVisible: true,
 })
-.pause(3000)
 .type('Software Engineer', { delay: 400})
-.pause(2400)
+.pause(2000)
 .delete(18)
 .type('Full-Stack Developer', {delay: 400})
-.pause(2400)
+.pause(2000)
 .delete(28)
-.type('UCSB Graduate')
+.type('UCSB Graduate', {delay: 400})
+.pause(2000)
 .go()
 
 //GSAP
