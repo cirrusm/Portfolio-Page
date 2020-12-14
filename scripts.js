@@ -5,6 +5,7 @@ const navBar = document.querySelector(".nav")
 
 const navLeft = menu.getBoundingClientRect().left;
 const navLink = document.querySelector(".nav-link")
+const icons = document.querySelector(".icons")
 
 
 navOpen.addEventListener("click", () => {
@@ -30,8 +31,10 @@ window.addEventListener('scroll', () => {
   const scrollHeight = window.pageYOffset;
   if(scrollHeight > navHeight){
     navBar.classList.add('fix-nav')
+    icons.classList.add('icons2')
   }else{
     navBar.classList.remove("fix-nav")
+    icons.classList.remove('icons2')
   }
 })
 
@@ -53,7 +56,7 @@ new TypeIt('#type1', {
 
 //GSAP
 
-gsap.from('.logo', {opacity: 0, duration: 1, delay: 0.5, y: -10})
+// gsap.from('.logo', {opacity: 0, duration: 1, delay: 0.5, y: -10})
 gsap.from('.hamburger', {opacity: 0, duration: 1, delay: 1, x: 20})
 gsap.from('.banner', {opacity: 0, duration: 1, delay: 1.5, x: -200})
 gsap.from('.hero h3', {opacity: 0, duration: 1, delay: 2, y: -50})
@@ -71,7 +74,7 @@ gsap.from(".nav-item", {
 gsap.from(".icons span", {
   opacity: 0,
   duration: 1,
-  delay: 5.5,
+  delay: 0.5,
   y: 30,
   stagger: 0.2
 })
