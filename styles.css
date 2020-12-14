@@ -398,6 +398,10 @@ a:visited{
   max-height: 100%;
 }
 
+.project-pic img:hover {
+  transform: scale(1.2);
+}
+
 @media only screen and (max-width: 567px) {
 .projectcontainer{
 
