@@ -6,6 +6,8 @@ const navBar = document.querySelector(".nav")
 const navLeft = menu.getBoundingClientRect().left;
 const navLink = document.querySelector(".nav-link")
 const icons = document.querySelector(".icons")
+const navList = document.querySelector("nav-list")
+
 
 
 navOpen.addEventListener("click", () => {
@@ -32,6 +34,8 @@ window.addEventListener('scroll', () => {
   if(scrollHeight > navHeight){
     navBar.classList.add('fix-nav')
     icons.classList.add('icons2')
+    navList.classList.add('nav-list2')
+    
   }else{
     navBar.classList.remove("fix-nav")
     icons.classList.remove('icons2')
