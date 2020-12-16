@@ -6,7 +6,7 @@ const navBar = document.querySelector(".nav")
 const navLeft = menu.getBoundingClientRect().left;
 const navLink = document.querySelector(".nav-link")
 const icons = document.querySelector(".icons")
-const navList = document.querySelector("nav-list")
+const navList = document.querySelector(".nav-list")
 
 
 
@@ -39,6 +39,7 @@ window.addEventListener('scroll', () => {
   }else{
     navBar.classList.remove("fix-nav")
     icons.classList.remove('icons2')
+    navList.classList.remove('nav-list2')
   }
 })
 

@@ -301,13 +301,14 @@ a:visited{
 }
 
 .icons {
-  margin-left: 2rem;
+  margin-left: 4rem;
+  
   
 }
 
 
 
-.icons span:not(:last-child) {
+.icons span {
   margin-right: 10vw;
 }
 
@@ -518,8 +519,23 @@ display: none;
   background-color: rgb(132, 205, 250)
 }
 
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 867px) {
 .about-center .aboutrow{
   flex-direction: column;
 }
+ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.techskills {
+  margin-top: 5vh;
+}
+}
+
+.nav-list2 .nav-item .nav-link:hover {
+  color: black !important;
+}
+
+.nav-list .nav-item .nav-link:hover {
+  color: rgb(132, 205, 250)
 }
