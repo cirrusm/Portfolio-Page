@@ -27,7 +27,9 @@ h3,
 h4 {
   font-weight: 500;
 }
-
+p{
+  font-size: 20px;
+}
 a {
   text-decoration: none;
 }
@@ -133,6 +135,7 @@ li {
 
 .nav-item {
   margin-right: 0.5rem;
+  font-size: 20px;
 }
 
 .nav-link:link,
@@ -299,6 +302,7 @@ a:visited{
 
 .icons {
   margin-left: 2rem;
+  
 }
 
 
@@ -366,7 +370,10 @@ display: none;
 .about-center {
   margin-left: 15%;
   margin-right: 15%;
+  display: flex;
 }
+
+
 
 .right h1 {
   color: rgb(132, 205, 250);
@@ -378,7 +385,7 @@ display: none;
     padding-left: 10%;
   margin-top: 5%;
   width: 100vw;
-  background-color: rgb(132, 205, 250);
+  background-color: rgba(132, 205, 250, .5);
   color: black;
 }
 
@@ -437,3 +444,82 @@ display: none;
   }
 }
 
+.sitelink {
+  color: black;
+  text-decoration: underline;
+}
+
+.sitelink:visited {
+  color: black;
+}
+
+.sitelink:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Contact Me */
+
+.contact-links {
+  margin-top: 10vh;
+}
+
+.contact-links li {
+  margin-top: 3vh;
+  font-size: 28px;
+}
+
+.aboutrow {
+  display: flex;
+}
+
+.aboutcolumn {
+  flex: 50%;
+  margin-left: 5vw;
+}
+
+.aboutexperience {
+  font-size: 16px;
+}
+
+.aboutheader {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.languageicon {
+  min-width: 65px;
+  width: 30%;
+}
+
+.techs {
+  width: 30%;
+  height: 30px;
+}
+
+.skillslist {
+  flex: 33%;
+  text-align: center;
+}
+
+.skillslist ul {
+  line-height: 50px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+#resume {
+  border-radius: 40px;
+}
+
+#resume:hover {
+  color: black;
+  background-color: rgb(132, 205, 250)
+}
+
+@media only screen and (max-width: 567px) {
+.about-center .aboutrow{
+  flex-direction: column;
+}
+}

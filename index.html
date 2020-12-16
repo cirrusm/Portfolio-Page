@@ -36,7 +36,7 @@
     <title>Cirrus Mokhtari</title>
   </head>
   <body>
-    <header class="header" id="home">
+    <header class="header" id="Home">
       <!-- Navigation-->
       <nav class="nav ">
         <div class="navigation container">
@@ -69,7 +69,7 @@
                 <a href="#Projects" class="nav-link">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#home" class="nav-link">Contact Me</a>
+                <a href="#Contact" class="nav-link">Contact Me</a>
               </li>
               
             </ul>
@@ -87,32 +87,73 @@
         <h1>Cirrus Mokhtari</h1>
         <h4>And I'm a <span id="type1"> </span> </h4>
         <h4>with a background in technology <br>management and finance.</h4>
-        <a href="">Resume</a>
+        <a id="resume"href="">Resume</a>
       </div>
       <!-- Icons-->
-      <div class="icons">
+      
         
     </header>
 
     <!-- Main-->
     <main>
       <!-- About-->
-      <section class="section about" id="about">
+      <section class="section about" id="About">
         <div class="title">
           <h1>About Me</h1>
         </div>
 
         <div class="about-center container ">
+     <div class="aboutrow">
+     <div class="aboutcolumn">  
+     <h3 class="aboutheader">Background</h3>
+     <p class="aboutexperience">
+
+
+        I am a software engineer who takes pride in bringing ideas to life by building full-stack applications. My  background in administration and accounting has equipped me with exemplary communication and analytical skills. Being a part of a variety of different teams has sharpened my ability to effectively work with others to achieve collective initiatives and goals. My passion for creating robust and scalable applications fuels my desire to continuously learn and add new technologies to my tool belt. I aim to work for a team that allows me to expand and refine my skill set while creating meaningful products that add real value to users' lives.
+        </p></div>
+     <div class="aboutcolumn">
+     <h3 class="aboutheader">Technical Skills</h3>
+     <div class="aboutrow">
+     <div class="skillslist"><ul>
+     <li>Javascript</li>
+     <li>React</li>
+     <li>MongoDB</li>
+     <li>Express</li>
+     <li>Node</li>
+     </ul></div>
+     <div class="skillslist"><ul>
+     <li>Python</li>
+     <li>Django</li>
+     <li>CSS</li>
+     <li>Bootstrap</li>
+     <li>Materialize</li>
+     </ul></div>
+     <div class="skillslist"><ul>
+     <li>APIs</li>
+     <li>JQuery</li>
+     <li>Mongoose</li>
+     <li>Plotly</li>
+     <li>Bcrypt</li>
+     </ul></div>
+     </div>
+     <div class="aboutrow skills">
+     <p>  </p>
+
+     </div>
+     <h3 class="aboutheader">Soft Skills</h3>
+     <div class="aboutrow skills"></div>
      
-        <p class="mauto">
-        I am software engineer and recent graduate of UCSB. My educational background in finance and technology management has equipped me with exemplary communication and analytical skills. Being a part of a variety of different teams has sharpened my ability to effectively work with others to achieve collective initiatives and goals. My passion for creating robust and scalable applications fuels my desire to continuously learn and add new technologies to my tool belt. I aim to work for a team that allows me to expand and sharpen my skill set while creating meaningful products that add real value to users' lives.
-        </p>
+     
+</p>
+</div>
+     </div>
+      
         
         </div>
       </section>
 
       <section class="title black">
-        <h1>My Projects</h1>
+        <h1 id="Projects">My Projects</h1>
         <div class ="projectcontainer">
             <h2>Stockify</h2>
             <br>
@@ -143,7 +184,8 @@
             <br>
             <p>Built with: Javascript, HTML, CSS, React, Bootstrap, and Petfinder API</p>
             <br>
-            <div class="links"> <a href="https://github.com/cirrusm/Puppy-Love" class="sitelink"> <span><i class="fab fa-github"></i></span> Github Repository </a> <br> <br><a href="" class="link"><i class="fas fa-link"></i> Visit the Site here </a></div>
+            <div class="links"> <a href="https://github.com/cirrusm/Puppy-Love" class="sitelink"> <span><i class="fab fa-github"></i></span> Github Repository </a> <br> <br>
+            <a href="" class="sitelink"><i class="fas fa-link"></i> Find a dog near you! </a></div>
                 <div class="project-pic-container">
                     <div class="project-pic">
                         <img src="/images/puppy.png" alt="">
@@ -157,13 +199,13 @@
         <div class ="projectcontainer">
             <h2>Super Tamagotchi Bros.</h2>
             <br>
-            <p>Stockify is a stock market trading application that allows for its users to practice trading stocks risk free. Prices for every stock listed on U.S. exchanges are updated in real-time, allowing for users to experience the fast-paced price action that markets consist of. </p>
+            <p>Super Tamagotchi Bros is a game that simulates the original Tamagotchi game combined with one of the most popular video game series of all time, Super Mario Brothers. Choose a character and help them evolve into their final form by keeping them fed, happy, and energized!    </p>
             <br>
             <p>Built with: Javascript, HTML, CSS, and JQuery</p>
             <br>
             <div class="links"> 
             <a href="https://github.com/cirrusm/Super-Tamagotchi-Bros" class="sitelink"><span><i class="fab fa-github"></i></span> Github Repository </a><br><br>
-            <a href="https://cirrusm.github.io/Super-Tamagotchi-Bros/" class="sitelink"><i class="fas fa-link"></i> Visit site here </a></div>
+            <a href="https://cirrusm.github.io/Super-Tamagotchi-Bros/" class="sitelink"><i class="fas fa-link"></i> Play Super Tamagotchi Bros. </a></div>
                 <div class="project-pic-container">
                     <div class="project-pic">
                         <img src="/images/gamehome.png" alt="">
@@ -179,9 +221,9 @@
             <br>
             <p>Stockify is a stock market trading application that allows for its users to practice trading stocks risk free. Prices for every stock listed on U.S. exchanges are updated in real-time, allowing for users to experience the fast-paced price action that markets consist of. </p>
             <br>
-            <p>Built with: MongoDB, Express, React, Node, Plotly, IEX API, and Alphavantage API</p>
+            <p>Built with: MongoDB, Express, Node, and the Genius Music API</p>
             <br>
-            <div class="links"> <a href="https://github.com/cirrusm/MusicScape" class="sitelink"><span><i class="fab fa-github"></i></span> Github Repository </a><br><br> <a href="https://fierce-bastion-27114.herokuapp.com/" class="sitelink"><i class="fas fa-link"></i> Visit site here</a> </div>
+            <div class="links"> <a href="https://github.com/cirrusm/MusicScape" class="sitelink"><span><i class="fab fa-github"></i></span> Github Repository </a><br><br> <a href="https://fierce-bastion-27114.herokuapp.com/" class="sitelink"><i class="fas fa-link"></i> Create your own Playlist</a> </div>
                 <div class="project-pic-container">
                     <div class="project-pic">
                         <img src="/images/playlist.png" alt="">
@@ -192,6 +234,16 @@
                 </div>
             
         </div>
+      </section>
+
+      <section id='Contact' class="title">
+      <h1>Contact Me</h1>
+      <div class="contact-links">
+      <ul>
+      <li>LinkedIn</li>
+      <li>Github</li>
+      <li>Email</li></ul>
+      </div>
       </section>
     </main>
 
