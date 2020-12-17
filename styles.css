@@ -512,10 +512,11 @@ display: none;
 
 #resume {
   border-radius: 40px;
+  color: black;
 }
 
 #resume:hover {
-  color: black;
+  color: white;
   background-color: rgb(132, 205, 250)
 }
 
@@ -538,4 +539,21 @@ ul {
 
 .nav-list .nav-item .nav-link:hover {
   color: rgb(132, 205, 250)
+}
+
+#mail {
+  color: white;
+}
+
+.contactlinks {
+  color: black;
+  text-decoration: underline;
+}
+
+.contactlinks:visited {
+  color: black;
+}
+
+.contactlinks:hover {
+  color:blue;
 }
