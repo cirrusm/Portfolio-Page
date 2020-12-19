@@ -9,7 +9,7 @@ const icons = document.querySelector(".icons")
 const navList = document.querySelector(".nav-list")
 
 
-
+//Clickable side nav for phone viewing
 navOpen.addEventListener("click", () => {
   
     menu.classList.add("show");
@@ -18,6 +18,7 @@ navBar.classList.add("show")
   
 });
 
+//Clickable close side nav button
 navClose.addEventListener("click", () => {
   
     menu.classList.remove("show");
@@ -43,7 +44,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
+//Autotyping on home page
 new TypeIt('#type1', {
   speed: 160,
   loop: true,
@@ -76,6 +77,7 @@ gsap.from(".nav-item", {
   stagger: 0.2
 })
 
+//Icon Delay
 gsap.from(".icons span", {
   opacity: 0,
   duration: 1,
