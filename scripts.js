@@ -77,7 +77,7 @@ gsap.from(".nav-item", {
   stagger: 0.2
 })
 
-//Icon Delay
+//Icon Delays
 gsap.from(".icons span", {
   opacity: 0,
   duration: 1,
